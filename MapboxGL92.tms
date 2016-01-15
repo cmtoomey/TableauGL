@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9200.15.1028.1752                                -->
+<mapsource inline='true' source-platform='mac' version='9.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <connection api-key='<access_key>' class='MapBox' description='Next Generation Tiles for Tableau' full-url='https://api.mapbox.com/styles/v1/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=<access_key>' inline='true' layer-separator=',' offline='' port='443' server='api.mapbox.com' service='https' tileset='US/normal' url-format='styles/v1/{L}/tiles/{Z}/{X}/{Y}{D}?access_token=<access_key>' wait-tile-color='#dddddd' />
+  <languages />
+  <layers>
+    <layer display-name='GL Test' name='username/mapid' show-ui='true' type='features' />
+  </layers>
+  <properties />
+  <map-styles>
+    <map-style display-name='GL Test' name='GL Test' wait-tile-color='#dddddd'>
+      <map-layer-style name='SvS' request-string='username/mapid' />
+    </map-style>
+  </map-styles>
+  <mapsource-defaults version='9.2'>
+    <style>
+      <style-rule element='map-layer'>
+        <format attr='enabled' id='username/mapid' value='true' />
+      </style-rule>
+      <style-rule element='map'>
+        <format attr='washout' value='0' />
+      </style-rule>
+    </style>
+  </mapsource-defaults>
+  <map-attribution copyright-string="That's right - Mapbox GL in Tableau" copyright-url="https://christoomey.atavist.com/tableauing-dangerously" short-copyright-string="Â© @Sock1tToomey"/>
+</mapsource>
